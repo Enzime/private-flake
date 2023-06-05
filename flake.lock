@@ -1,0 +1,45 @@
+{
+  "nodes": {
+    "base": {
+      "inputs": {
+        "secrets": [
+          "secret"
+        ]
+      },
+      "locked": {
+        "lastModified": 1685968762,
+        "narHash": "sha256-kxpTGM0cnLFiUXlxGSjdQh2C7uWJR7/gnIKSDNvM0eA=",
+        "owner": "Enzime",
+        "repo": "base-flake",
+        "rev": "5f8aa9d90fc3cc4dbbcf6638210075ca67b3a0cc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Enzime",
+        "repo": "base-flake",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "base": "base",
+        "secret": "secret"
+      }
+    },
+    "secret": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-kfL8Uq/UVV9AVhX8zWC9c/0vAgz0BUByUnuzf8P5nCM=",
+        "path": "./secret",
+        "type": "path"
+      },
+      "original": {
+        "path": "./secret",
+        "type": "path"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
